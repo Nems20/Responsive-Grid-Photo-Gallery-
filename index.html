@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Responsive Photo Gallery</title> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+        
+    </head>
+    <style>
+ *{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/236x/12/70/32/127032f4a6e08732a0a668c795699873.jpg);
+    object-fit: cover;
+}
+
+.container{
+    max-width: 1224px;
+    width:90;
+    margin:auto;
+    padding:40px;
+}
+.title{
+    margin-bottom: 2rem;
+    background-color: rgba(5, 255, 255, 0.411);
+    column-span: none;
+    border-radius: 2rem;
+    text-align:center;
+    font-size: 1900;
+    font-style: normal;
+    font-weight: 1000;
+   text-shadow: whitesmoke;
+    font-family: fantasy;
+    padding: top 5px;
+    padding: bottom 5px;
+  
+   
+}
+
+
+.photo-gallery{
+    display:flex;
+    gap: 30px;
+    
+
+}
+.photo img{
+    width:100%;
+    height:100%;
+    
+    object-fit: cover;
+    padding: 20px;
+    margin-bottom: .5rem;
+
+}
+div img:hover {
+        filter: light;
+        transform: scale(1.03);
+    }
+.column img{
+   padding:5px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   background-color: rgb(241, 241, 242);
+}
+@media(max-width:768px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+}
+    </style>
+
+    <body>
+    <div class="container">
+        <hr>
+        <h2 class="title"><pre> M Y   F O O D    P R  E F E R E N C E S</pre> </h2>
+        <hr>
+        <div class="photo-gallery">
+            <div class="column">
+                <div class="photo">
+                    <img src="https://i.pinimg.com/474x/07/37/1a/07371a5299ecdc51bbb2dfff5b59ba47.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/736x/06/da/fc/06dafc7643a6470248bb616ed45ff9f6.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/5a/66/2d/5a662d4f1a2335f4a388d817dd300446.jpg" alt="">
+                </div>     
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/43/7c/44/437c447768d443d33d9ee3743e87dd08.jpg" alt="">
+                </div>
+                       
+            </div>
+
+            <div class="column">
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/b8/98/d5/b898d531441641144330d5a4d0e56253.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/36/4f/75/364f752a15b18d54d09a04384164cb7f.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/564x/a2/71/b8/a271b8ad52341e2bd8c6d5662081d8fc.jpg" alt="">
+                </div>     
+                <div class="photo">
+                    <img src="https://i.pinimg.com/736x/fc/9e/04/fc9e04e288ace5a2e31bfd0a89ec1742.jpg" alt="">
+                </div>     
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/44/e1/76/44e17655f3864e91a766099f70f2048b.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/43/aa/c3/43aac38beb35ee9adb6e4da6faf98e89.jpg" alt="">
+                </div>
+                    
+            </div>
+
+            <div class="column">
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/c6/4e/8a/c64e8ae656b83c944df7f23ce39dcabe.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/64/fe/3d/64fe3d7a76e9923481433f72c6c532e9.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/564x/df/e4/d9/dfe4d94c7eb565ecca8341d1284332e1.jpg" alt="">
+                </div>      
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/a9/d0/00/a9d0004316174e516477a4940a6b4b36.jpg" alt="">
+                </div>
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/c0/e7/ce/c0e7ce18bfbc8f27ac015b6b5226102a.jpg" alt="">
+                </div>   
+                <div class="photo">
+                    <img src="https://i.pinimg.com/236x/93/f7/ad/93f7ad93da69e8d030202d9de512b600.jpg" alt="">
+                </div> 
+                
+            </div>
+
+        </div>
+    
+
+    </div>
+    <hr>
+
+    </body>
+</html>
